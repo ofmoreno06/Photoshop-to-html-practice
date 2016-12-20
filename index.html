@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Pjamas</title>
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+
+          <div class="navbar-header">
+            <a href="index.html">
+              <div id="logo" alt="Logo">
+                <span>p . j a m a s</span>
+              </div>
+            </a>
+
+            <div id="collapsed-nav-button">
+              <button type="button" class="navbar-toggle collapsed"
+              data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                <span class="sr-only">Toogle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <button type="button" class="btn visible-xs"><i class="fa fa-shopping-cart"></i></button>
+
+            </div>
+          </div>
+
+          <span class="hidden-xs"><i class="fa fa-phone"></i> Call (888) 752-6274</span>
+
+
+
+          <div id="search-bar" class="input-group">
+            <input type="text" class="form-control" placeholder="Search entire store here...">
+            <span class="input-group-btn">
+              <button class="btn" type="button"><i class="fa fa-search"></i></button>
+              <button class="btn hidden-xs" type="button"><i class="fa fa-ellipsis-v"></i></button>
+            </span>
+            <span class="input-group-btn">
+
+            </span>
+          </div>
+
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav ">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html">Women</a></li>
+              <li><a href="index.html">Man</a></li>
+              <li><a href="index.html">Kids</a></li>
+            </ul>
+          </div>
+
+          <div id="cart-section" class="nav-right-menu hidden-xs">
+            <ul>
+              <li>0 items</li>
+              <li><a href="index.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+            </ul>
+          </div>
+          <div id="login-section" class="nav-right-menu hidden-xs">
+            <ul>
+              <li>Hello. Sing in</li>
+              <li><a href="index.html">Your Account</a></li>
+            </ul>
+          </div>
+
+      </nav>
+    </header>
+
+    <section id="cover-section">
+        <div class="row">
+          <div class="container">
+            <div class="visible-xs cover-pic col-sm-6">
+              <img src="img/cover-xs.png" alt="Cover picture">
+            </div>
+            <div class="cover-section-header col-sm-6">
+              <h2>Where the gifts are for her, him and kids</h2>
+              <h3>shop for sleepwear, pajamas & robes at p.jamas</h3>
+              <a href="#">
+                <button class="btn btn-primary" type="button">Shop now</button>
+              </a>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="products-section">
+        <div class="container">
+
+          <button id="category-menu-button" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#collapsable-nav2" aria-expanded="false">
+            Women <i class="fa fa-navicon"></i>
+          </button>
+
+          <h3>Featured Products</h3>
+
+          <div id="collapsable-nav2" class="collapse navbar-collapse">
+            <ul id="category-menu" class="nav navbar-nav">
+              <li><button type="button" class="btn btn-default active">
+                <span class="arrow-down hidden-xs"></span>Women</button>
+              </li>
+              <li><button type="button" class="btn btn-default">Men</button></li>
+              <li><button type="button" class="btn btn-default">Kids</button></li>
+            </ul>
+          </div>
+
+          <div id="featured-products" class="product-slider">
+
+              <div class="product-item-canvas">
+                <div class="product-item-pic"></div>
+                <div class="product-item-info">
+                  <a href="#"><h4>Product name<h4></a>
+                  <span class="product-price">$187.00</span>
+                  <div class="product-rate">
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                  </div>
+                  <span id="product-color"></span>
+                  <hr></hr>
+                  <div class="product-options">
+                    <button type="button"><i class="fa fa-shopping-cart"></i> <span> Add to cart</span></button>
+                    <div class="product-social">
+                      <button type="button"><i class="fa fa-copy"></i></button>
+                      <button type="button"><i class="fa fa-heart"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-item-canvas">
+                <div class="product-item-pic"></div>
+                <div class="product-item-info">
+                  <a href="#"><h4>Product name<h4></a>
+                  <span class="product-price">$187.00</span>
+                  <div class="product-rate">
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                  </div>
+                  <span id="product-color"></span>
+                  <hr></hr>
+                  <div class="product-options">
+                    <button type="button"><i class="fa fa-shopping-cart"></i> <span> Add to cart</span></button>
+                    <div class="product-social">
+                      <button type="button"><i class="fa fa-copy"></i></button>
+                      <button type="button"><i class="fa fa-heart"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-item-canvas">
+                <div class="product-item-pic"></div>
+                <div class="product-item-info">
+                  <a href="#"><h4>Product name<h4></a>
+                  <span class="product-price">$187.00</span>
+                  <div class="product-rate">
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                  </div>
+                  <span id="product-color"></span>
+                  <hr></hr>
+                  <div class="product-options">
+                    <button type="button"><i class="fa fa-shopping-cart"></i> <span> Add to cart</span></button>
+                    <div class="product-social">
+                      <button type="button"><i class="fa fa-copy"></i></button>
+                      <button type="button"><i class="fa fa-heart"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-item-canvas">
+                <div class="product-item-pic"></div>
+                <div class="product-item-info">
+                  <a href="#"><h4>Product name<h4></a>
+                  <span class="product-price">$187.00</span>
+                  <div class="product-rate">
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                  </div>
+                  <span id="product-color"></span>
+                  <hr></hr>
+                  <div class="product-options">
+                    <button type="button"><i class="fa fa-shopping-cart"></i> <span> Add to cart</span></button>
+                    <div class="product-social">
+                      <button type="button"><i class="fa fa-copy"></i></button>
+                      <button type="button"><i class="fa fa-heart"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-item-canvas">
+                <div class="product-item-pic"></div>
+                <div class="product-item-info">
+                  <a href="#"><h4>Product name<h4></a>
+                  <span class="product-price">$187.00</span>
+                  <div class="product-rate">
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                  </div>
+                  <span id="product-color"></span>
+                  <hr></hr>
+                  <div class="product-options">
+                    <button type="button"><i class="fa fa-shopping-cart"></i> <span> Add to cart</span></button>
+                    <div class="product-social">
+                      <button type="button"><i class="fa fa-copy"></i></button>
+                      <button type="button"><i class="fa fa-heart"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-item-canvas">
+                <div class="product-item-pic"></div>
+                <div class="product-item-info">
+                  <a href="#"><h4>Product name<h4></a>
+                  <span class="product-price">$187.00</span>
+                  <div class="product-rate">
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                  </div>
+                  <span id="product-color"></span>
+                  <hr></hr>
+                  <div class="product-options">
+                    <button type="button"><i class="fa fa-shopping-cart"></i> <span> Add to cart</span></button>
+                    <div class="product-social">
+                      <button type="button"><i class="fa fa-copy"></i></button>
+                      <button type="button"><i class="fa fa-heart"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-item-canvas">
+                <div class="product-item-pic"></div>
+                <div class="product-item-info">
+                  <a href="#"><h4>Product name<h4></a>
+                  <span class="product-price">$187.00</span>
+                  <div class="product-rate">
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                  </div>
+                  <span id="product-color"></span>
+                  <hr></hr>
+                  <div class="product-options">
+                    <button type="button"><i class="fa fa-shopping-cart"></i> <span> Add to cart</span></button>
+                    <div class="product-social">
+                      <button type="button"><i class="fa fa-copy"></i></button>
+                      <button type="button"><i class="fa fa-heart"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-item-canvas">
+                <div class="product-item-pic"></div>
+                <div class="product-item-info">
+                  <a href="#"><h4>Product name<h4></a>
+                  <span class="product-price">$187.00</span>
+                  <div class="product-rate">
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                  </div>
+                  <span id="product-color"></span>
+                  <hr></hr>
+                  <div class="product-options">
+                    <button type="button"><i class="fa fa-shopping-cart"></i> <span> Add to cart</span></button>
+                    <div class="product-social">
+                      <button type="button"><i class="fa fa-copy"></i></button>
+                      <button type="button"><i class="fa fa-heart"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+
+          <h3>New Arrivals</h3>
+
+          <div id="new-arrivals-products" class="product-slider">
+
+              <div class="product-item-canvas">
+                <div class="product-item-pic"></div>
+                <div class="product-item-info">
+                  <a href="#"><h4>Product name<h4></a>
+                  <span class="product-price">$187.00</span>
+                  <div class="product-rate">
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                  </div>
+                  <span id="product-color"></span>
+                  <hr></hr>
+                  <div class="product-options">
+                    <button type="button"><i class="fa fa-shopping-cart"></i> <span> Add to cart</span></button>
+                    <div class="product-social">
+                      <button type="button"><i class="fa fa-copy"></i></button>
+                      <button type="button"><i class="fa fa-heart"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-item-canvas">
+                <div class="product-item-pic"></div>
+                <div class="product-item-info">
+                  <a href="#"><h4>Product name<h4></a>
+                  <span class="product-price">$187.00</span>
+                  <div class="product-rate">
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                  </div>
+                  <span id="product-color"></span>
+                  <hr></hr>
+                  <div class="product-options">
+                    <button type="button"><i class="fa fa-shopping-cart"></i> <span> Add to cart</span></button>
+                    <div class="product-social">
+                      <button type="button"><i class="fa fa-copy"></i></button>
+                      <button type="button"><i class="fa fa-heart"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-item-canvas">
+                <div class="product-item-pic"></div>
+                <div class="product-item-info">
+                  <a href="#"><h4>Product name<h4></a>
+                  <span class="product-price">$187.00</span>
+                  <div class="product-rate">
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                  </div>
+                  <span id="product-color"></span>
+                  <hr></hr>
+                  <div class="product-options">
+                    <button type="button"><i class="fa fa-shopping-cart"></i> <span> Add to cart</span></button>
+                    <div class="product-social">
+                      <button type="button"><i class="fa fa-copy"></i></button>
+                      <button type="button"><i class="fa fa-heart"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-item-canvas">
+                <div class="product-item-pic"></div>
+                <div class="product-item-info">
+                  <a href="#"><h4>Product name<h4></a>
+                  <span class="product-price">$187.00</span>
+                  <div class="product-rate">
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                  </div>
+                  <span id="product-color"></span>
+                  <hr></hr>
+                  <div class="product-options">
+                    <button type="button"><i class="fa fa-shopping-cart"></i> <span> Add to cart</span></button>
+                    <div class="product-social">
+                      <button type="button"><i class="fa fa-copy"></i></button>
+                      <button type="button"><i class="fa fa-heart"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-item-canvas">
+                <div class="product-item-pic"></div>
+                <div class="product-item-info">
+                  <a href="#"><h4>Product name<h4></a>
+                  <span class="product-price">$187.00</span>
+                  <div class="product-rate">
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                  </div>
+                  <span id="product-color"></span>
+                  <hr></hr>
+                  <div class="product-options">
+                    <button type="button"><i class="fa fa-shopping-cart"></i> <span> Add to cart</span></button>
+                    <div class="product-social">
+                      <button type="button"><i class="fa fa-copy"></i></button>
+                      <button type="button"><i class="fa fa-heart"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-item-canvas">
+                <div class="product-item-pic"></div>
+                <div class="product-item-info">
+                  <a href="#"><h4>Product name<h4></a>
+                  <span class="product-price">$187.00</span>
+                  <div class="product-rate">
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                  </div>
+                  <span id="product-color"></span>
+                  <hr></hr>
+                  <div class="product-options">
+                    <button type="button"><i class="fa fa-shopping-cart"></i> <span> Add to cart</span></button>
+                    <div class="product-social">
+                      <button type="button"><i class="fa fa-copy"></i></button>
+                      <button type="button"><i class="fa fa-heart"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-item-canvas">
+                <div class="product-item-pic"></div>
+                <div class="product-item-info">
+                  <a href="#"><h4>Product name<h4></a>
+                  <span class="product-price">$187.00</span>
+                  <div class="product-rate">
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                  </div>
+                  <span id="product-color"></span>
+                  <hr></hr>
+                  <div class="product-options">
+                    <button type="button"><i class="fa fa-shopping-cart"></i> <span> Add to cart</span></button>
+                    <div class="product-social">
+                      <button type="button"><i class="fa fa-copy"></i></button>
+                      <button type="button"><i class="fa fa-heart"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-item-canvas">
+                <div class="product-item-pic"></div>
+                <div class="product-item-info">
+                  <a href="#"><h4>Product name<h4></a>
+                  <span class="product-price">$187.00</span>
+                  <div class="product-rate">
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                    <span><i class="fa fa-star"></i>
+                  </div>
+                  <span id="product-color"></span>
+                  <hr></hr>
+                  <div class="product-options">
+                    <button type="button"><i class="fa fa-shopping-cart"></i> <span> Add to cart</span></button>
+                    <div class="product-social">
+                      <button type="button"><i class="fa fa-copy"></i></button>
+                      <button type="button"><i class="fa fa-heart"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+
+          <div id="social-section" class="hidden-xs">
+            <button>
+              <i class="fa fa-envelope social-icons"></i> Subscribe to our Newsletter
+            </button>
+            <div id="social-section-right">
+              <button>
+                <i class="fa fa-facebook-official  social-icons"></i>
+              </button>
+              <button>
+                <i class="fa fa-twitter social-icons"></i>
+              </button>
+              <button>
+                <i class="fa fa-instagram social-icons"></i>
+              </button>
+              <button>
+                <i class="fa fa-youtube social-icons"></i>
+              </button>
+              <button>
+                <i class="fa fa-pinterest social-icons"></i>
+              </button>
+              <button>
+                <i class="fa fa-google-plus-circle social-icons"></i>
+              </button>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="hidden-xs">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <h5>Company</h5>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Press Releases</a></li>
+              <li><a href="#">Investors</a></li>
+            </ul>
+            <hr class="visible-xs">
+          </div>
+          <div class="col-sm-3">
+            <h5>Customer Service</h5>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Orders & Returns</a></li>
+              <li><a href="#">Shipping Rates & Policies</a></li>
+              <li><a href="#">Internationa Shipping</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+            <hr class="visible-xs">
+          </div>
+          <div class="col-sm-3">
+            <h5>Your Account</h5>
+            <ul>
+              <li><a href="#">Your Account</a></li>
+              <li><a href="#">Your Orders</a></li>
+              <li><a href="#">Your Wishlist</a></li>
+              <li><a href="#">Payment Methods</a></li>
+              <li><a href="#">Newsletter</a></li>
+            </ul>
+            <hr class="visible-xs">
+          </div>
+          <div class="col-sm-3" id="contact-us">
+            <h5>Contact Us</h5>
+            <ul>
+              <li><i class="fa fa-map-marker"></i> 73 Cresent Ave <br> New Rochelle, NY 10801</li>
+              <li>
+                <ul>
+                  <li><i class="fa fa-phone"></i> <a>(888) PJAMAS4</a></li>
+                  <li><a href="#">(888) 752-6274</a></li>
+                </ul>
+                <hr class="visible-xs">
+              </li>
+              <li><i class="fa fa-envelope"></i> <a href="#">help@p-jamas.com</a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <footer id="footer-xs" class="visible-xs">
+
+      <div id="back-to-top" class="col-sm-4 visible-xs">
+        <a href="#">
+          <button class="center-block" type="button" name="button">
+            <i class="fa fa-angle-up fa-2x"></i><br>
+            <span>Back to Top</span>
+          </button>
+        </a>
+      </div>
+
+      <div id="footer-accordion">
+        <h5>Company</h5>
+        <div class="">
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Press Releases</a></li>
+            <li><a href="#">Investors</a></li>
+          </ul>
+        </div>
+        <h5>Customer Service</h5>
+        <div>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Orders & Returns</a></li>
+            <li><a href="#">Shipping Rates & Policies</a></li>
+            <li><a href="#">Internationa Shipping</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <h5>Your Account</h5>
+        <div>
+          <ul>
+            <li><a href="#">Your Account</a></li>
+            <li><a href="#">Your Orders</a></li>
+            <li><a href="#">Your Wishlist</a></li>
+            <li><a href="#">Payment Methods</a></li>
+            <li><a href="#">Newsletter</a></li>
+          </ul>
+        </div>
+
+        <h5>Contact Us</h5>
+        <div id="contact-us-xs">
+          <ul>
+            <li><i class="fa fa-map-marker"></i> 73 Cresent Ave <br> New Rochelle, NY 10801</li>
+            <li>
+              <ul>
+                <li><i class="fa fa-phone"></i> <a>(888) PJAMAS4</a></li>
+                <li><a href="#">(888) 752-6274</a></li>
+              </ul>
+            </li>
+            <li><i class="fa fa-envelope"></i> <a href="#">help@p-jamas.com</a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <footer id="bottom-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5">
+            <span>Copyright <i class="fa fa-copyright"></i> P-jamas.com</span><br>
+            <span>This is a preview. The products hace random colors.</span>
+          </div>
+          <div class="col-sm-2 hidden-xs">
+            <a href="#">
+              <button class="center-block" type="button" name="button">
+                <i class="fa fa-angle-up"></i><br>
+                <span>Back to Top</span>
+              </button>
+            </a>
+          </div>
+          <div class="col-sm-5 hidden-xs">
+            <div class="pay-source">
+              <img src="img/maestro.png" alt="American Express" height="30px" width="45px">
+            </div>
+            <div class="pay-source">
+              <img src="img/mastercard.png" alt="American Express" height="30px" width="45px">
+            </div>
+            <div class="pay-source">
+              <img src="img/american-express.png" alt="American Express" height="30px" width="45px">
+            </div>
+            <div class="pay-source">
+              <img src="img/discover.png" alt="American Express" height="30px" width="45px">
+            </div>
+            <div class="pay-source">
+              <img src="img/visa.png" alt="American Express" height="30px" width="45px">
+            </div>
+            <div class="pay-source">
+              <img src="img/paypal.png" alt="American Express" height="30px" width="45px">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <!-- JavaScript -->
+    <script src="/js/jquery.min.js" charset="utf-8"></script>
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="/js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="/js/slick.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(function(){
+        $("#footer-accordion").accordion({
+          collapsible: true,
+          active: false,
+          icons: { "header": "fa fa-angle-right fa-2x", "activeHeader": "fa fa-angle-down fa-2x" }
+        });
+      });
+
+      $(function(){
+        $('.product-slider').slick({
+          dots: true,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 5,
+          slidesToScroll: 3,
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToScroll: 3,
+                slidesToShow: 5,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 970,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                dots: false
+              }
+            },
+            {
+              breakpoint: 500,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 3,
+                dots: false
+              }
+            },
+            {
+              breakpoint: 420,
+              settings: {
+                slidesToShow:1.5,
+                slidesToScroll:1,
+                dots: false
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+        });
+      });
+    </script>
+  </body>
+</html>
