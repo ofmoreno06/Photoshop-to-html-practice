@@ -7,12 +7,10 @@ This excercise was part of a test for a job offer. At that time I was just learn
 Someone sent some layouts to me in image format and my task is convert the layout to code.  
 
 layout1:   
-<img src="https://github.com/ofmoreno06/Photoshop-to-html-practice/blob/master/layout/pjamas1.png?raw=true" 
-alt="Layout1" width="500/></a>
+![Layout1](https://github.com/ofmoreno06/Photoshop-to-html-practice/blob/master/layout/pjamas1.png?raw=true "Layout1")
 
-layout2:   
-<img src="https://github.com/ofmoreno06/Photoshop-to-html-practice/blob/master/layout/pjamas2.png?raw=true" 
-alt="Layout2" width="500/></a>
+layout2:  
+![Layout2](https://github.com/ofmoreno06/Photoshop-to-html-practice/blob/master/layout/pjamas2.png?raw=true "Layout2")
 
 ## The results
 
